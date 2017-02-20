@@ -18,7 +18,15 @@
 /* Main Program */
 int main(void)
 {
+	float r1, r2;
+	float i;
+	printf("Enter the value for outer radius(r2): ");
+	scanf("%f", &r2);
+	printf("Enter the value for inner radius(r1): ");
+	scanf("%f", &r1);
 
+	i = 3.14159/4 * ((r2*r2*r2*r2) - (r1*r1*r1*r1));
+	printf("The second moment of inertia is %.2f\n", i);
 	return 0;
 }
 
