@@ -33,7 +33,7 @@ int main(void)
 	printf("Miles = Kilometers\n");
 		for (int j = Startmile; j <= Endmile; j++)
 		{
-			Startmile =+ 1;
+			Startmile += 1;
 			convM = MtoK(Startmile);
 			printf("%3.1d   %10.2f\n", Startmile, convM);
 		}
