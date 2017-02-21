@@ -31,22 +31,15 @@ int main(void)
 	printf("Enter the desired increments: ");
 	scanf("%d", &inc);
 
-<<<<<<< HEAD
-	printf("Miles = Kilometers\n");
-	for (int j = Startmile; j <= Endmile; j++)
-	{
-		convM = MtoK(Startmile);
-		printf("%3.1d   %10.2f\n", j, convM);
-	}
-=======
 	printf("Miles  =  Kilometers\n");
-	for (int i= StartMile; i <= EndMile; i+= inc)
+	for (int i= StartMile; i<= EndMile; i+= inc)
 	{
 		k = i * 1.61;
 		printf("%3.1d %10.2f\n", i, k);
->>>>>>> 08ff15d2c9d8bcdbd7733d113eea4a9ca8796cea
 
 	}
+	printf("done!");
+	
 	return 0;
 }
 
