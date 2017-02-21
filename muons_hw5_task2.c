@@ -21,32 +21,24 @@ float MtoK(float m);
 /* Main Program */
 int main(void)
 {
-	float convM;
-	int inc, Startmile, Endmile;
-	printf("Enter start point: \n");
-	scanf("%d", &Startmile);
-	printf("Enter end point: \n");
-	scanf("%d", &Endmile);
-	printf("Enter increments: \n");
-	scanf("%d", &inc); 
+	float k;
+	int  StartMile, EndMile, inc;
 
-	printf("Miles = Kilometers\n");
-		for (int j = Startmile; j <= Endmile; j++)
-		{
-			Startmile += 1;
-			convM = MtoK(Startmile);
-			printf("%3.1d   %10.2f\n", Startmile, convM);
-		}
+	printf("Enter the starting miles: ");
+	scanf("%d", &StartMile);
+	printf("Enter the ending miles: ");
+	scanf("%d", &EndMile);
+	printf("Enter the desired increments: ");
+	scanf("%d", &inc);
 
+	printf("Miles  =  Kilometers\n");
+	for (int i= StartMile; i <= EndMile; i+= inc)
+	{
+		k = i * 1.61;
+		printf("%3.1d %10.2f\n", i, k);
+
+	}
 	return 0;
 }
 
 /* Function Defenitions */
-float MtoK(float m)
-{
-	float k;
-	k = m * 1.61;
-	return k;
-}
-
-
